@@ -1,0 +1,15 @@
+Day 1 Contents
+
+   0: cd \
+   1: cls
+   2: python --version
+   3: node --version
+   4: git --version
+   5: aws --version
+   6: sam --version
+   7: docker --version
+   8: code --version
+   9: winget --version
+ ▸10: terraform --version
+
+ 
