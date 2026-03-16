@@ -1,7 +1,5 @@
 Day 1 Contents
 
-   0: cd \
-   1: cls
    2: python --version
    3: node --version
    4: git --version
@@ -9,20 +7,71 @@ Day 1 Contents
    6: sam --version
    7: docker --version
    8: code --version
+
+OPTIONAL:   
    9: winget --version
  ▸10: terraform --version
 
-if AWS CLI is missing,
 
+if AWS CLI is missing,
 winget install -e --id Amazon.AWSCLI
 
 
 If AWS SAM CLI is missing,
-
 winget install -e --id Amazon.SAM-CLI
 
+or
 
+pip install aws-sam-cli
+
+once it's installed, try 
+
+  sam --version
+
+
+OPTIONAL:
 If localstack is missing,
-
 winget install -e --id LocalStack.localstack-cli
 
+
+
+Browser -> console.aws.amazon.com
+
+  Sign-In ->
+
+  
+  Enter Account id
+  User Name
+  Password
+
+
+AWS Portal -> Home -> Search for IAM -> Users ->
+
+  select your user -> security credentials -> 
+
+  under access keys -> create access key ->
+
+  choose CLI 
+
+  accept the terms
+
+  provide the description
+
+  create access key
+
+  download the CSV file
+
+in the command prompt ->
+
+  aws configure
+
+  copy and paste the access key -> press Enter
+  copy and paste the access secret key -> press Enter
+  note down your region, copy and paste -> Enter
+  type json
+
+  to verify aws credentials are working ...
+
+    aws ec2 describe-instances
+
+  
